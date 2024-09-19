@@ -1,4 +1,4 @@
-//以下程式用來建立「點」
+//以下程式為建立「點」部分
 
 //建立一個物件儲存滑鼠目前的x,y座標
 let mouse = {
@@ -77,7 +77,3 @@ window.addEventListener("mouseup", (event) => {
     draw();
   }
 });
-
-// let dragDiv = document.querySelector(".dot");
-// let startX = 0;
-// let startY = 0;

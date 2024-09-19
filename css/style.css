@@ -19,21 +19,14 @@ body{
  article{
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
  }
- /* canvas{
+ canvas{
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
- } */
+    /* background-color:aquamarine; */
+    position: absolute;
+    /* z-index: -1; */
+ }
 
  /* 產生的點 */
  .dot{
@@ -42,6 +35,5 @@ body{
     border-radius: 8px;
     background-color: #ea5050;
     position: absolute;
-    /* visibility: hidden; */
  }
 
