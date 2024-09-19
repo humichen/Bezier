@@ -1,15 +1,18 @@
 body{
     background-color: #f0f0f0;
+    margin: 0;
  }
+
  /* 設定繪圖區 */
  article{
     width: 100vw;
     height: 100vh;
  }
  canvas{
-    width: 100vw;
-    height: 100vh;
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
  }
 
  /* 產生的點 */
