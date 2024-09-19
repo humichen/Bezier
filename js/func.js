@@ -18,8 +18,8 @@ window.addEventListener("mouseup", (event) => {
     for (let index = 0; index < e.length; index++) {
       var x = 0;
       var y = 0;
-      x += e[index].offsetLeft - e[index].scrollLeft + e[index].clientLeft + 8;
-      y += e[index].offsetTop - e[index].scrollLeft + e[index].clientTop + 8;
+      x += e[index].offsetLeft - e[index].scrollLeft + e[index].clientLeft;
+      y += e[index].offsetTop - e[index].scrollLeft + e[index].clientTop;
       id = e[index].id;
       e[index] = e[index].offsetParent;
       posArray.push({ id: id, x: x, y: y });
