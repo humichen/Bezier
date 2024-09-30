@@ -1,8 +1,8 @@
 //以下程式碼為繪製貝茲曲線部分
 
 //畫布初始化
-let canvas = document.getElementById("myCanvas")
-let ctx = canvas.getContext("2d");
+const canvas = document.getElementById("myCanvas")
+const ctx = canvas.getContext("2d");
 let h = canvas.height = window.innerHeight;
 let w = canvas.width = window.innerWidth;
 
@@ -33,7 +33,7 @@ window.addEventListener("mouseup", (event) => {
 
     ctx.clearRect(0, 0, w, h);//清空畫布
 
-    drawBezierCurve(ctx, position);//繪製貝茲曲線
+    drawBezierCurve(position);//繪製貝茲曲線
   }
   
 });
@@ -55,7 +55,7 @@ function recursiveBezier(t, points) {
 }
 
 //將貝茲曲線繪製出來
-function drawBezierCurve(ctx, points) {
+function drawBezierCurve(points) {
     ctx.beginPath();
     ctx.moveTo(points[0].x, points[0].y);
 
